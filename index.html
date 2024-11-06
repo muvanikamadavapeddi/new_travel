@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>TravelBloom</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">About Us</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Enter a destination or keywords">
+            <button id="searchbtn" onclick="searchDestination()">Search</button>
+            <button id="closebtn">Close</button>
+        </div>
+    </header>
+        <main id="content">
+            <div class="hero" id="home">
+                <div>
+                    <h2>EXPLORE <br> DREAM <br> DESTINATION</h2>
+                    <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
+                    <button id="bookbtn">BOOK NOW</button>
+                </div>
+                
+            </div>
+    
+            <div class="hero" id="about">
+                <div class="about-intro">
+                    <h1>ABOUT US</h1>
+                    <p>Welcome to Our Company! We are a team of passionate individuals dedicated to providing excellent services/products to our customers.
+                        Our mission is to provide the best experience for people traveling to different destinations around the world. Our values include
+                        integrity, innovation, customer satisfaction, and teamwork. We believe in putting our customers first and working together to achieve our goals.
+                        Feel free to explore our website to learn more about what we offer!
+                    </p>
+                </div>
+
+            <div class="team-section">
+                <div> <p class="my-team">Our Team</p></div>
+               <div>
+                <div class="team-members">
+                    <div class="team-member">
+                        <h3>John Doe</h3>
+                        <p>John is responsible <br>for...</p>
+                        <button class="role-btn">CEO</button>
+                    </div>
+                    <div class="team-member">
+                        <h3>Celina Thomas</h3>
+                        <p>Celina is responsible <br>for...</p>
+                        <button class="role-btn">Team Lead</button>
+                    </div>
+                    <div class="team-member">
+                        <h3>Mike Tyson</h3>
+                        <p>Mike is responsible <br>for...</p>
+                        <button class="role-btn">Delivery Head</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+
+            <div class="hero" id="contact" >
+                <div class="contact-container">
+                    <div class="contact-info">
+                    <h1>Contact Us</h1>
+                    <p>get in touch....</p>
+                    </div>
+                    <form class="contact-form">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <textarea id="message" placeholder="Your Message" required></textarea>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                    </div>
+            </div>
+        </main> 
+        <div  id="display" ></div>   
+   
+    <aside class="social-icons">
+        <a href="#"><img src="facebook-removebg-preview.png" alt="Facebook"></a>
+        <a href="#"><img src="twitter-removebg-preview.png" alt="Twitter"></a>
+        <a href="#"><img src="instagram-removebg-preview.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube-removebg-preview.png" alt="YouTube"></a>
+    </aside>
+    <script src="index.js"></script>
+</body>
+</html>
